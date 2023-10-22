@@ -1,0 +1,27 @@
+{
+    "name": "Custom Discord Theme",
+    "version": "1.0.0",
+    "description": "When enabled the web version of discord will be updated with a new style. This is by no means a compleat style, there are many things that are not changed and many things that dont look great.",
+    "manifest_version": 3,
+    "author": "crawdad105",
+    "content_scripts":[
+        {
+            "matches":[ "https://discord.com/*" ],
+            "js":[ "app.js" ]
+        }
+    ],
+    "permissions": ["activeTab"],
+    "host_permissions": ["<all_urls>"],
+    "web_accessible_resources": [
+        {
+            "resources": [ "customCss.css"],
+            "matches": [ "https://discord.com/*" ]
+        }
+    ],
+    "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}

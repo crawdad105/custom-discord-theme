@@ -1,0 +1,584 @@
+/**
+  * @name the hit theme
+  * @author Crawdad105
+  * @version 0.0
+  * @description Customizable disocrd theme
+  * @authorLink https://crawdad105.com
+  * @website https://crawdad105.com
+*/
+:root{
+    --BlackOulineSmall: 0 0 2px var(--NormalBoarderColor);
+    --WhiteOulineSmall: 0 0 2px var(--SelectedBoarderColor);
+
+    --BlackOuline: 0 0 5px var(--NormalBoarderColor);
+    --WhiteOuline: 0 0 5px var(--SelectedBoarderColor);
+
+    --BlackOulineLarge: 0 0 10px var(--NormalBoarderColor);
+    --WhiteOulineLarge: 0 0 10px var(--SelectedBoarderColor);
+
+    --BlackOulineXLarge: 0 0 20px var(--NormalBoarderColor);
+    --WhiteOulineXLarge: 0 0 20px var(--SelectedBoarderColor);
+
+    --NormalBoarderColor: rgb(0, 0, 0);
+    --SelectedBoarderColor: rgb(255, 255, 255);
+
+    --Background0: rgb(169, 8, 177); /* lighter background */
+    --Background1: rgb(101, 30, 118); /* deafoalt background */
+    --Background2: rgb(66, 13, 79); /* darker background */
+    --Background3: rgb(38, 9, 46); /* even darker background */
+
+    --ChannleBackgroundColor: rgb(101, 30, 118);
+    --MessageBoxColor: transparent;
+
+    --ButtonNormalColor: rgb(121, 34, 141);
+    --ButtonHoverColor: rgb(156, 29, 185);
+
+    --PingColor: rgb(255, 217, 0);
+    --PingbkacgorundOverlay: rgba(255, 217, 0, 0.096);
+
+    --NewMassageSinceColor: rgb(119, 0, 255);
+    --NewMeesageDeviderColor: rgb(255, 0, 89);
+
+    --LinkTextColor: rgba(0, 145, 255, 0.775);
+    --BrightTextColor: rgb(255, 255, 255);
+    --MainTextColor: rgb(216, 216, 216);
+    --SubTextColor: rgba(220, 220, 220, 0.775);
+    --DimTextColor: rgba(172, 172, 172, 0.775);
+    --HighlightedTextColor: rgb(0, 0, 0);
+    --HighlightColor: rgba(0, 106, 255, 0.608);
+    --CaratColor: rgb(29, 0, 32);
+}
+
+.scrollerInner-2PPAp2{ /* channble background */
+    background: var(--ChannleBackgroundColor);
+    box-shadow: 0px 0px 50px rgb(0, 0, 0) inset;
+}
+.message-2CShn3 { /* message box */
+    background-color: var(--MessageBoxColor);
+    box-shadow: var(--BlackOulineLarge);
+    margin: 5px;
+    border-radius: 6px;
+    width: calc(100% - 160px);
+    transform: translate(15px);
+}
+.message-2CShn3:hover { /* message box : hover */
+    box-shadow: var(--WhiteOulineLarge);
+}
+.messageContent-2t3eCI > span{ /* message box text */
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--MainTextColor);
+}
+.message-2CShn3:hover .messageContent-2t3eCI{ /* message box text : hover */
+    text-shadow: var(--WhiteOulineSmall);
+}
+.mouse-mode.full-motion .message-2CShn3:hover, .message-2CShn3:hover{
+    background-color: var(--Background0);
+}
+.username-h_Y3Us{
+    margin: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: bolder;
+    box-shadow: var(--BlackOuline);
+    background-color: var(--Background2);
+    border-radius: 4px;
+}
+.group-spacing-16 .divider-IqmEqJ.hasContent-1y12-u{ /* date line */
+    background-color: var(--Background2);
+    height: 4px;
+    box-shadow: var(--BlackOuline);
+}
+.content-3spvdd{ /* date line text */
+    background-color: var(--Background2);
+    box-shadow: var(--BlackOuline);
+    font-size: 14px;
+    color: var(--SubTextColor)
+}
+.form-3qe0Ni::before{  /* wired blend thing (bacily just moved it off scnree because idk why its there) */
+    transform: translate(-50px);
+}
+.form-3qe0Ni{ /* typing aria background */
+    box-shadow: var(--BlackOulineXLarge) inset;
+    background-color: var(--Background1);
+}
+.channelTextArea-1deLlK{ /* typing aria (wired behind part) */
+    transform: translate(0, 13px);
+    background-color: transparent;
+}
+.scrollableContainer-15eg7h{ /* typing aria forground */
+    background-color: var(--Background0);
+    border-radius: 20px;
+    box-shadow: var(--BlackOuline);
+}
+.textArea-2CLwUE{ /* Typing normal text */
+    color: var(--MainTextColor);
+    font-weight: bolder;
+    font-size: 20px;
+    text-shadow: var(--WhiteOulineSmall);
+    caret-color: var(--CaratColor);
+}
+.textArea-2CLwUE::selection{ /* Typing hilghted text */
+    background:var(--HighlightColor); 
+    color:var(--HighlightedTextColor);
+}
+.textArea-2CLwUE::placeholder{ /* Typing placegolder text */
+    color: var(--DimTextColor);
+    font-style: italic;
+}
+.avatar-2e8lTP.clickable-31pE3P{ /* avitar on msg */
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    box-shadow: var(--BlackOuline);
+}
+.avatar-2e8lTP.clickable-31pE3P:hover{ /* avitar on msg : hover */
+    width: 42px;
+    height: 42px;
+    transform: translate(-1px, -1px);
+}
+.assetWrapper-2hzITV{
+    box-shadow: var(--BlackOuline) inset;
+}
+.lookFilled-1H2Jvj.colorPrimary-2-Lusz{ /* button 1 normal */
+    background-color: var(--ButtonNormalColor);
+    box-shadow: var(--BlackOuline);
+}
+.lookFilled-1H2Jvj.colorPrimary-2-Lusz:hover{ /* button 2 normal */
+    background-color: var(--ButtonHoverColor);
+    box-shadow: var(--WhiteOuline);
+}
+.mentioned-Tre-dv{ /* pinged message background overlay */
+    box-shadow: 0 0 10px var(--PingColor);
+    background-color: var(--PingbkacgorundOverlay);
+}
+.mentioned-Tre-dv::before{ /* mention side color bar */
+    width: 6px;
+    border-radius: 5px;
+    background-color: var(--PingColor);
+}
+.repliedMessage-3Z6XBG::before{ /* replay message strike thing */
+    border-color: var(--Background0);
+}
+.chatContent-2O4SXb{ /* channle scroll bar */
+    transform: translate(0px); /* change '0px' to '20px' to remove scroll bar */
+}
+.scroller-kQBbkU{ /* channle scroll bar bg color */
+    background-color: var(--Background1);
+}
+.managedReactiveScroller-1LjJZ5::-webkit-scrollbar-thumb{ /* scroll bar handle */
+    background-color: var(--Background0);
+}
+.managedReactiveScroller-1LjJZ5::-webkit-scrollbar-track{ /* scroll bar track */
+    background-color: var(--Background2);
+}
+.jumpToPresentBar-1cEnH0{ /* return to new msgs bar */
+    background-color: var(--Background2);
+    border-radius: 10px;
+    width: 95%;
+    box-shadow: var(--BlackOuline);
+}
+.jumpToPresentBar-1cEnH0:hover{ /* return to new msgs bar : hover */
+    box-shadow: var(--WhiteOuline);
+}
+.rem-3kT9wc.botTag-7aX5WZ{ /* bot tag (& other) */
+    background-color: var(--Background0);
+    box-shadow: var(--BlackOuline);
+    height: 18px;
+}
+.rem-3kT9wc.botTag-7aX5WZ > span{ /* bot tag text (& other) */
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 2px;
+    margin: 4px;
+}
+.wrapper-1ZcZW- { /* role & person memtnion */
+    background-color: rgba(209, 122, 217, 0.367);
+    margin: 4px;
+    box-shadow: var(--BlackOuline);
+}
+.markup-eYLPri a{
+    color: var(--LinkTextColor);
+    text-shadow: 0 0 2px var(--LinkTextColor);
+    border-radius: 4px;
+}
+.markup-eYLPri code.inline{
+    background-color: var(--Background2);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 12px;
+    color: rgb(9, 187, 0);
+    text-shadow: 0 0 5px green;
+    font-weight: bolder;
+}
+.spoilerMarkdownContent-2R1Vwe.hidden-2lQZ5q{ /* spoiler hidden */
+    border-radius: 2px;
+    background-color: var(--Background2);
+    box-shadow: var(--BlackOuline);
+}
+.spoilerMarkdownContent-2R1Vwe.hidden-2lQZ5q:hover{ /* spoiler hidden mouse over */
+    box-shadow: var(--WhiteOuline);
+    border-radius: 8px;
+}
+.emoji{
+    box-shadow: var(--BlackOuline);
+    margin: 2px;
+}
+#Button{
+    background-color: rgb(69, 74, 80);
+    color: rgb(185, 185, 185);
+    border-radius: 4px;
+    transition: all 0.1s;
+}
+#Button:hover{
+    background-color: rgb(37, 104, 185);
+    color: rgb(255, 255, 255);
+    box-shadow: var(--WhiteOuline);
+}
+.Button1Offcet{
+    width: 60px;
+    transform: translate(5px, -3px);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.members-2y1nVj, .membersListNotices-3yhEwx{ /* member list BG */
+    background-color: var(--Background1);
+    box-shadow: 0 0 10px black inset;
+}
+.members-2y1nVj, .membersListNotices-3yhEwx::-webkit-scrollbar-thumb{ /* member list scrlol */
+    background-color: var(--Background1);
+}
+.membersGroup-2YoqY-{ /* member seperater text */
+    transform: translate(8px, -5px);
+    background-color: var(--Background2);
+    width: 96%;
+    margin-top: 10px;
+    margin-bottom: -3px;
+    padding-top: 5px;
+    padding-left: 5px;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: var(--BlackOuline) inset;
+}
+.membersGroup-2YoqY- > span{ /* member seperater text */
+    font-size: 14px;
+    font-weight: bolder;
+    padding-top: 10px;
+    color: var(--MainTextColor);
+}
+.member-2iQhp7{ /* member div */
+    background-color: var(--Background2);
+    margin-bottom: 2px;
+    border-radius: 10px;
+    margin-left: 12px;
+    width: calc(100% - 12px - 4px);
+    box-shadow: var(--BlackOuline);
+}
+.member-2iQhp7:hover{ /* member div : hover */
+    margin-left: 8px;
+    box-shadow: var(--WhiteOuline);
+}
+.selected-1-Z6gm.container-1oeRFJ{
+    background-color: var(--Background0);
+    margin-left: 8px;
+    box-shadow: var(--WhiteOuline);
+}
+.selected-1-Z6gm .layout-1qmrhw{ /* memner hilight thing (idk why this needs to exist in the first palce its literly trash for modding disord and its not even the proper scaling for its defualt function) */
+    background-color: transparent;
+}
+.username-3_PJ5r{ /* memner list user name */
+
+    padding-left: 4px;
+    padding-right: 4px;
+    font-weight: bolder;
+    background-color: var(--Background1);
+    border-radius: 4px;
+}
+.activityText-1rR-8O{ /* user playing game and that other thing */
+    font-weight: bold;
+    color: var(--SubTextColor);
+}
+.container-2vWgD2{
+    background-color: var(--Background2);
+}
+.ownerIcon-255uKo{
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    box-shadow: 0 0 5px var(--PingColor);
+}
+.icon-1dGlZy{
+    background-color: transparent;
+}
+.lookFilled-1H2Jvj.colorBrand-2M3O3N{
+    background-color: var(--ButtonNormalColor);
+    box-shadow: var(--BlackOuline);
+    border-radius: 10px;
+}
+.lookFilled-1H2Jvj.colorBrand-2M3O3N:hover{
+    background-color: var(--ButtonHoverColor);
+    box-shadow: var(--WhiteOuline);
+    border-radius: 10px;
+}
+.wrapper-3HVHpV, .cozy-3hKWhq.wrapper-15CKyy{
+    background-color: var(--Background1);
+}
+.children-3xh0VB:after{ /* wired blend thing on top thing (compressed it into ablivien to remove it) */
+    height: 0px;
+}
+.theme-dark .themed-Hp1KC_{ /* Top bar */
+    background-color: var(--Background0);
+    box-shadow: var(--BlackOulineLarge) inset;
+}
+.title-17SveM{ /* Top bar name/title */
+    font-weight: bolder;
+    font-size: 18px;
+}
+.iconWrapper-2awDjA{ /* Top bar icons */
+    box-shadow: var(--BlackOuline);
+    border-radius: 10px;
+    margin-right: -2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.clickable-ZD7xvu:hover{ /* Top bar icons (clickable ones) : hover  */
+    box-shadow: var(--WhiteOuline);
+}
+.children-3xh0VB > div{  /* main Top bar icon */
+    border-radius: 0px;
+    box-shadow: none;
+    margin-right: 0px;
+}
+.children-3xh0VB{  /* main Top bar icon and  name/title */
+    border-radius: 10px;
+    box-shadow: var(--BlackOuline);
+}
+.timestamp-p1Df1m > time > span{ /* edited message text */
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bolder;
+}
+.searchBar-jGtisZ{ /* main Top bar search */
+    display: flex;
+    align-items: center;
+    background-color: var(--Background0);
+    box-shadow: var(--BlackOuline);
+    margin-right: -8px;
+    caret-color: var(--CaratColor);
+}
+.scroller-1ox3I2{
+    background-color: var(--Background1);
+    box-shadow: 0 0 10px black inset;
+}
+.containerDefault-YUSmu3{ /* channle div Back */
+    background-color: var(--Background2);
+    margin-bottom: 2px;
+    border-radius: 10px;
+    margin-left: 12px;
+    width: calc(100% - 12px - 8px);
+    box-shadow: var(--BlackOuline);
+}
+.containerDefault-YUSmu3:hover{ /* channle div : hover */
+    box-shadow: var(--WhiteOuline);
+    transform: translate(6px);
+}
+.header-3OsQeK{ /* sever name div */
+    background-color: var(--Background0);
+    box-shadow: var(--BlackOulineLarge) inset;
+}
+.container-1-ERn5{/* sever name div hiver */
+    background-color: var(--Background0);
+    box-shadow: var(--BlackOuline) inset;
+}
+.scroller-3X7KbA{ /* server scoll bar */
+    background-color: var(--Background2);
+    box-shadow: var(--BlackOulineLarge) inset;
+}
+.withFrame-1sEfxu{ /* Window header */
+    background-color: var(--Background3);
+    margin: 0px;
+    height: 25px;
+}
+.winButton-3SigSb{/* Window header buttons */
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 35px;
+    box-shadow: var(--BlackOulineLarge);
+}
+.winButton-3SigSb:hover{/* Window header hover buttons */
+    box-shadow: var(--WhiteOuline);
+}
+.childWrapper-1j_1ub{ /* no color for server icon */
+    background-color: var(--Background1);
+}
+.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub, .wrapper-3kah-n:hover .childWrapper-1j_1ub{/* no color for server icon : hover and selected */
+    background-color: var(--Background0);
+}
+.wrapper-2PSQCG > svg > mask{ /* server icon mask (removed it i dont know why using a mask was a good idea baorder radius is way better) */
+    display: none;
+}
+.wrapper-3kah-n > img, .wrapper-3kah-n > div{ /* actual icon */
+    border-radius: 10px;
+}
+.blobContainer-ikKyFs{ /* icon behind */
+    box-shadow: var(--BlackOuline);
+    border-radius: 10px;
+    transition: all 0.1s;
+}
+.blobContainer-ikKyFs:hover{ /* icon behind */
+    box-shadow: var(--WhiteOulineLarge);
+}
+.sectionDivider-189lqb{ /* cahnnle devider */
+    background-color: var(--Background2);
+    height: 4px;
+    width: calc(100% - 12px);
+    box-shadow: var(--BlackOuline);
+}
+.clickable-2AoIYN{ /* cahnnle group header */
+    transform: translate(8px, -5px);
+    background-color: var(--Background2);
+    width: 96%;
+    margin-top: 10px;
+    margin-bottom: -3px;
+    padding-top: 5px;
+    padding-left: 5px;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: var(--BlackOuline) inset;
+}
+.clickable-2AoIYN > div > svg{ /* cahnnle group header arrow */
+    transform: translate(0px);
+}
+.clickable-2AoIYN > div > h3{ /* cahnnle group header text */
+    transform: translate(10px, -3px);
+}
+.children-3MeUvj{ /* cahnnle group header + */
+    transform: translate(0, -3px);
+}
+.folder-241Joy{ /* sever folder */
+    border-radius: 10px;
+    background-color: var(--Background1);
+}
+.folder-241Joy.hover-3m7-WT{ /* sever folder */
+    background-color: var(--Background2);
+}
+.wrapperSimple-2SFl9K{  /* default server icon */
+    border-radius: 8px;
+}
+.expandedFolderBackground-1kSAf6{ /* sever folder expand */
+    box-shadow: var(--BlackOuline);
+    border-radius: 10px;
+    bottom: 5%;
+    background-color: var(--Background1);
+}
+.container-2sjPya > *{/* embed & thread  */
+    width: 100%;
+    border-radius: 10px;
+}
+.container-3i3IzO{ /* therad */
+    background-color: var(--Background2);
+}
+.embedFull-1HGV2S{ /* embed  */
+    border: 2px solid var(--background-tertiary);
+    border-left: 10px solid var(--background-tertiary);
+    box-shadow: var(--BlackOulineLarge);
+    background-color: var(--Background2);
+}
+.embedFull-1HGV2S:hover{ /* embed hover  */
+    box-shadow: var(--WhiteOulineLarge);
+}
+.markup-eYLPri code{ /* code text */
+    background-color: var(--Background2);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 12px;
+    color: rgb(9, 187, 0);
+    text-shadow: 0 0 5px green;
+    font-weight: bolder;
+}
+.newMosaicStyle-2jdUaP .codeView-12LUIl{ /* file code text */
+    background-color: var(--Background2);
+    font-family:'Courier New', Courier, monospace;
+    font-size: 12px;
+    color: rgb(9, 187, 0);
+    text-shadow: 0 0 5px green;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+.newMosaicStyle-2jdUaP .textContainer-36wgKK{ /* file code text boarder */
+    background-color: var(--Background1);
+    box-shadow: var(--BlackOulineLarge);
+}
+.footer-GXWBBp{/* file code text footed */
+    background-color: var(--Background1);
+    box-shadow: var(--BlackOulineLarge);
+}
+.theme-dark .panel-ufc1-o, .theme-dark .container-1CH86i, .container-2NLBJg{ /* user and playing section under channle list */
+    background-color: var(--Background1);
+    box-shadow: var(--BlackOulineLarge) inset;
+}
+.theme-dark .panel-ufc1-o{ /* user section */
+    background-color: var(--Background1);
+    box-shadow: var(--BlackOulineLarge) inset;
+}
+.reaction-3vwAF2.reactionMe-1PwQAc{
+    background-color: var(--Background1);
+    border-color: var(--Background0);
+}
+.cozy-VmLDNB.hasThread-3h-KJV:after{ /* therad down thihng */
+    border-color: var(--Background0);
+}
+.disabledButtonWrapper-1m0hYZ{ /* disabled button back */
+    box-shadow: var(--BlackOuline);
+    border-radius: 10px;
+}
+.button-2gNyE9.buttonColor-1PCuWq:disabled, .button-2gNyE9 .buttonColor-1PCuWq:disabled{ /* actual disabled button */
+    background-color: var(--Background1);
+}
+.newMessagesBar-1hF-9G{ /* new msg */
+    background-color: var(--NewMassageSinceColor);
+    border-color: var(--Background0);
+}
+.group-spacing-16 .divider-IqmEqJ.beforeGroup-1BvJAt{ /* new devider */
+    height: 5px;
+    background-color: var(--NewMeesageDeviderColor);
+    border: 0px;
+    border-radius: 10px;
+}
+.unreadPill-3nEWYM{ /* new devider new thing */
+    background-color: var(--NewMeesageDeviderColor);
+    border-radius: 10px;
+    width: 80px;
+    position:static;
+}
+.unreadPill-3nEWYM > svg{ /* new devider new thing pointy */
+    display: none;
+}
+.bar-wDIGjg{ /* unread message in channle */
+    background-color: var(--NewMassageSinceColor);
+}
+.userProfileInnerThemedNonPremium-2AJg-H{ /* default user profile */
+    background: linear-gradient(0deg ,var(--Background2), var(--Background1));
+    box-shadow: var(--BlackOulineXLarge) inset;
+}
+.popoutBanner-3cqRD9, .popoutBannerPremium-3i5EEI{ /* user baner */
+    box-shadow: var(--BlackOuline) inset;
+}
+.userPopoutOverlayBackground-3A0Pcz{ /* user details */
+    background-color: var(--Background1);
+    box-shadow: var(--BlackOulineLarge);
+}
+.divider-2dDziJ{ /* profile devieddr */
+    background-color: transparent;
+    margin: 0px;
+}
+
+.rolePill-78LFtg, .input-3O04eu, .gameIcon-1siQqm, .lineClamp2Plus-2SCQmH{ /* radome user menue things that look beter liek this */
+    box-shadow: var(--BlackOuline);
+    background-color: var(--Background1);
+    padding: 5px;
+    border-radius: 10px;
+}
